@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <h1 id="titulo-principal">Cadastro de funcionários</h1>
+        <p id="iparagrafo1">Informe seus dados abaixo para fazer o seu cadastro</p>
+
+        <form action="#" method="post" autocomplete="off"><!--LOCAL ONDE IREI FAZER O MEU FORMULÁRIO-->
+            <fieldset>
+                <div class="nomes" id="nomes1">
+                    <strong><label for="inome">Nome</label></strong> <br><!--NOME-->
+                    <input type="text" name="nome" id="inome" required minlength="3">
+                </div>
+                <div class="nomes" id="nomes2">
+                    <label for="isobrenome"><strong>Sobrenome</strong></label><br>
+                    <input type="text" name="sobrenome" id="isobrenome" required minlength="3">
+                </div>
+                <div id="imatriculas">
+                    <label for="imatricula"><strong>Matrícula</strong></label> <br>
+                    <input type="text" name="matricula" id="imatricula" required minlength="3" maxlength="7">
+                </div>
+            </fieldset>
+            <div id="iusinas">
+                <label for="iindustria"><strong>Industria</strong></label> <br>
+                <select name="industria" id="iindustria">
+                    <option value="" disabled selected>...</option>
+                    <option value="TAG">Tagripalma</option>
+                    <option value="ARA">Arapalma</option>
+                    <option value="TEC">Tecpalma</option>
+                    <option value="PAR">Parcel</option>
+                    <option value="AMA">Amapar<id="iparagrafo2"/option>
+                    <option value="CPC">Cpc</option>
+                </select>
+            </div>
+            <div id="iareas">
+                <label for="iarea"><strong>Área</strong></label> <br>
+                <select name="area" id="iarea">
+                    <option value="" disabled selected>...</option>
+                    <optgroup label="Produção">
+                        <option value="EST">Estererização</option>
+                        <option value="PRE">Prensagem de palma</option>
+                        <option value="REC">Recuperação de Amêndoas</option>
+                        <option value="PAL">Palmisteria</option>
+                        <option value="CLA">Clarificação</option>
+                        <option value="REP">Repasse</option>
+                    </optgroup>
+                    <optgroup label="Utilidade">
+                        <option value="CAL">Caldeira</option>
+                        <option value="TRA">Alimentação e descarte de biomassa</option>
+                        <option value="ELE">Casa de força</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div id="icargos">
+                <label for="icargo"><strong>Cargo</strong></label> <br>
+                
+                <input type="radio" name="operador" id="icargo1" checked>
+                <label for="icargo1">Operador C</label>
+                
+                <input type="radio" name="operador" id="icargo2">
+                <label for="icargo2">Operador B</label>
+                <input type="radio" name="operador" id="icargo3">
+                <label for="icargo3">Operador A</label>
+            </div>
+            <div id="itexto">
+                <p id="iparagrafo2"><strong>Conte um pouco da sua experiência:</strong></p>
+                <textarea name="" id="itexto" cols="45" rows="12" placeholder="Digite aqui..."></textarea>
+            </div>
+
+            <input type="submit" id="ibotao" value="Enviar">
+
+        </form>
+        
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(
+        to top,
+        #012030 ,
+        #13678A
+    );
+    
+}
+
+fieldset{
+    border: 0px;
+}
+
+main{
+    background-color:#9AEBA3;
+    
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+
+
+    height: 750px;
+    width: 460px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.521);
+}
+
+h1{
+    text-align: center;
+    
+    padding-bottom: 05px;
+    padding-top: 20px;
+    
+}
+p{
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+#iparagrafo2{
+    padding-top: 10px;
+}
+
+#inome, #isobrenome, #imatricula{
+    padding-right: 200px;
+    outline: none;
+ 
+}
+
+
+
+#nomes1, #nomes2, #imatriculas{
+    padding-left: 42px;
+    padding-bottom: 18px;
+}
+
+#iareas, #iusinas{outline: none;
+    padding-left: 42px;
+    padding-bottom: 18px;
+}
+#icargos{
+    margin-left: 42px;
+    padding-bottom: 18px;
+}
+#icargo1, #icargo2, #icargo3{
+    margin-left: 15px;
+    margin-top: 15px;
+} 
+textarea{
+    margin-left:40px;
+    outline: none;
+}
+#ibotao{
+    padding: 18px 40px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 01px 01px 03px rgba(0, 0, 0, 0.473);
+
+    margin-left: 166px;
+    margin-top: 10px;
+
+    font-weight: bold;
+    font-size: 1em;
+
+    background-color: #0f668b;
+    color: white;
+
+    cursor: pointer; 
+
+}
+#ibotao:hover{
+    background-color: #16759e;
+    transition: background-color 0.1s;
+}
