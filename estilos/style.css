@@ -8,7 +8,7 @@
 body{
     height: 100vh;
     background-image: linear-gradient(
-        to top,
+        to right,
         #012030 ,
         #13678A
     );
@@ -21,6 +21,7 @@ fieldset{
 
 main{
     background-color:#9AEBA3;
+    
     
     position: relative;
 
